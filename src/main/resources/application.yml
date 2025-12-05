@@ -1,0 +1,23 @@
+server:
+  port: 8089
+
+spring:
+  application:
+    name: sample-jenkins-Service
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/transaction
+    username: postgres
+    password: rakesh.438
+    hikari:
+      minimum-idle: 5
+      maximum-pool-size: 10
+      pool-name: PackageHikariPool
+      idle-timeout: 300000
+      max-lifetime: 600000
+      validation-timeout: 2500
+  jpa:
+    show-sql: false
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
