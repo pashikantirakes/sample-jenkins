@@ -12,7 +12,7 @@ public class SampleJenkins {
         return "Hi Jenkins";
     }
 
-    @GetMapping("/hi/{name")
+    @GetMapping("/hi/{name}")
     public String greeting(@PathVariable String name){
         return "Hi Jenkins - " + name;
     }
